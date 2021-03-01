@@ -38,13 +38,29 @@
                         path: '/tables/regular'
                       }">
         </sidebar-item>
+          <div class="dropdown-divider"></div>
+      <a href="https://www.creative-tim.com/product/nuxt-argon-dashboard-pro-laravel"
+        target="_blank"
+        class="btn btn-sm btn-danger btn-icon mx-sm-5 mb-2 d-none d-md-block">
+        <span class="btn-inner--icon"><i class="fas fa-download mr-2"></i></span>
+        <span class="nav-link-inner--text">Calendario Académico</span></a>
 
-        <sidebar-item :link="{
-                        name: 'Google',
-                        icon: 'ni ni-pin-3',
-                        path: '/maps/google'
-                      }">
-        </sidebar-item>
+      <a href="https://nuxt-argon-dashboard-laravel.creative-tim.com/documentation/"
+        target="_blank"
+        class="btn btn-sm btn-neutral btn-icon mx-sm-5 mb-2 d-none d-md-block"
+        ><span class="btn-inner--icon"><i class="fas fa-file-alt"></i></span>
+        <span class="nav-link-inner--text">Historial según pensum</span></a>
+
+      <a href="https://www.creative-tim.com/product/nuxt-argon-dashboard-laravel"
+        target="_blank" class="btn btn-sm btn-info btn-icon mx-sm-5 mb-2 d-none d-md-block">
+        <span class="btn-inner--icon"><i class="ni ni-hat-3"></i></span>
+        <span class="nav-link-inner--text">Reglamento Académico</span></a>
+
+      <a href="https://github.com/creativetimofficial/nuxt-argon-dashboard-laravel"
+        target="_blank" class="btn btn-sm btn-dark btn-icon mx-sm-5 mb-2 d-none d-md-block">
+        <span class="btn-inner--icon"><i class="ni ni-building"></i></span>
+        <span class="nav-link-inner--text">Sistema de Apoyo a la Permanencia</span></a>
+
       </template>
     </side-bar>
     <div class="main-content">

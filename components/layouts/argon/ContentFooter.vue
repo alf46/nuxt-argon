@@ -9,7 +9,7 @@
               class="nav-link"
               target="_blank"
               rel="noopener"
-              >CREATIVE TIM</a
+              >Acerca de INTEC</a
             >
           </li>
           <li class="nav-item">
@@ -18,7 +18,7 @@
               class="nav-link"
               target="_blank"
               rel="noopener"
-              >UPDIVISION</a
+              >Admisiones</a
             >
           </li>
           <li class="nav-item">
@@ -27,7 +27,7 @@
               class="nav-link"
               target="_blank"
               rel="noopener"
-              >ABOUT US</a
+              >Oferta Académica</a
             >
           </li>
           <li class="nav-item">
@@ -36,16 +36,7 @@
               class="nav-link"
               target="_blank"
               rel="noopener"
-              >BLOG</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href="https://www.creative-tim.com/license"
-              class="nav-link"
-              target="_blank"
-              rel="noopener"
-              >LICENSES</a
+              >Biblioteca</a
             >
           </li>
         </ul>
@@ -53,21 +44,11 @@
 
       <div class="col-lg-6">
         <div class="copyright text-center text-lg-right text-muted">
-          © {{ year }}, made with <i class="fa fa-heart heart"></i> by<a
-            href="https://www.creative-tim.com"
+          © {{ year }}, Consejería Académica | <a
+            href="https://www.intec.edu.do/"
             class="font-weight-bold ml-1"
             target="_blank"
-            rel="noopener"
-            >Creative Tim</a
-          >
-          and<a
-            href="https://www.updivision.com"
-            class="font-weight-bold ml-1"
-            target="_blank"
-            rel="noopener"
-            >UPDIVISION</a
-          >
-          for a better web.
+            rel="noopener" >INTEC</a>
         </div>
       </div>
     </div>
