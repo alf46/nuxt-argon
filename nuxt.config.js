@@ -41,7 +41,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: "Nuxt Argon Dashboard Laravel by Creative Tim & UPDIVISION",
+    title: "INTEC - Consejería Académica",
     meta: [
       { charset: "utf-8" },
       {

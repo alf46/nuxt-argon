@@ -9,14 +9,12 @@
         <template slot="header">
           <div class="row">
             <div class="col-6">
-              <h3 class="mb-0">Users List</h3>
+              <h3 class="mb-0">Gestión de citas</h3>
             </div>
             <div class="col-6 text-right">
-              <base-button type="primary" icon size="sm" @click="onProFeature">
-                <span class="btn-inner--icon"
-                  ><i class="fas fa-user-edit"></i
-                ></span>
-                <span class="btn-inner--text">Add User</span>
+              <base-button type="primary" size="sm" @click="onProFeature">
+                 <i class="fas fa-plus-circle"></i>
+                <span class="btn-inner--text">Crear Cita</span>
               </base-button>
             </div>
           </div>
@@ -45,51 +43,64 @@
             :data="users"
             @sort-change="sortChange"
           >
-            <el-table-column
-              label="Name"
-              min-width="310px"
-              prop="name"
-              sortable="custom"
-            />
-            <el-table-column
-              label="Email"
-              min-width="310px"
-              prop="email"
-              sortable="custom"
-            />
-            <el-table-column
-              label="Created At"
-              prop="created_at"
-              min-width="140px"
-              sortable="custom"
-            />
-            <el-table-column min-width="180px" align="center">
-              <div class="table-actions">
-                <el-tooltip content="Edit" placement="top">
-                  <a
-                    type="text"
-                    @click="onProFeature"
-                    class="table-action"
-                    data-toggle="tooltip"
-                    style="cursor: pointer"
-                  >
-                    <i class="fas fa-user-edit"></i>
-                  </a>
-                </el-tooltip>
 
-                <el-tooltip content="Delete" placement="top">
-                  <a
-                    type="text"
-                    @click="onProFeature"
-                    class="table-action table-action-delete"
-                    data-toggle="tooltip"
-                    style="cursor: pointer"
-                  >
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </el-tooltip>
-              </div>
+            <el-table-column
+              label="Motivo"
+              min-width="120px"
+              prop="reason"
+              sortable/>
+
+            <el-table-column
+              label="Fecha"
+              prop="date"
+              min-width="100px"
+              sortable/>
+
+            <el-table-column
+                    label="Estudiante"
+                    min-width="120px"
+                    sortable>
+              <template v-slot="{row}">
+                    <nuxt-link :to="`/estudiantes/${row.studentId}`">
+                      <div class="media-body text-muted">
+                          <span class="font-weight-600 name mb-0 text-sm">{{row.studentName}}</span>
+                      </div>
+                    </nuxt-link>
+              </template>
             </el-table-column>
+
+             <el-table-column
+                    label="Estado"
+                    min-width="120px"
+                    sortable>
+              <template v-slot="{row}">
+
+                <span v-if="row.status==true" 
+                    class="badge badge-info">Completada
+                </span>
+
+                <span v-if="row.status==false" 
+                    class="badge badge-success">Pendiente 
+                </span>
+
+              </template>
+            </el-table-column>
+           
+            <el-table-column
+                    min-width="80px">
+              <template v-slot="{row}">
+
+                <span v-if="row.virtual==true" 
+                    class="badge badge-info">Virtual
+                </span>
+
+                <span v-if="row.virtual==false" 
+                    class="badge badge-warning">Presencial 
+                </span>
+
+              </template>
+            </el-table-column>
+
           </el-table>
         </div>
         <div
@@ -98,7 +109,7 @@
         >
           <div class="">
             <p class="card-category">
-              Showing {{ from + 1 }} to {{ to }} of {{ total }} entries
+              Mostrando  {{ from + 1 }} a {{ to }} de {{ total }} citas
 
               <span v-if="selectedRows.length">
                 &nbsp; &nbsp; {{ selectedRows.length }} rows selected
@@ -150,7 +161,7 @@ export default {
     return {
       selectedRows: [],
       users: [],
-      sort: "created_at",
+      sort: "date",
 
       pagination: {
         perPage: 5,
@@ -158,7 +169,7 @@ export default {
         perPageOptions: [5, 10, 25, 50],
       },
 
-      total: 1,
+      total: 2,
     };
   },
   computed: {
@@ -183,10 +194,23 @@ export default {
     getList() {
       this.users = [
         {
-          name: "Admin",
-          email: "admin@jsonapi.com",
-          created_at: "2020-01-01",
+            id: '1',
+            reason: 'Ambientación institucional',
+            date: 'marzo 2, 2021',
+            studentId: '10000232',
+            studentName: 'Santa Brioso',
+            virtual: true,
+            status: false
         },
+        {
+            id: '2',
+            reason: 'Duda de carrera',
+            date: 'enero 14, 2021',
+            studentId: '10000231',
+            studentName: 'Oscar Pellerano',
+            virtual: false,
+            status: true
+        }
       ];
     },
     onProFeature() {

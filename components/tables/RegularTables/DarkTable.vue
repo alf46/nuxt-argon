@@ -1,12 +1,12 @@
 <template>
     <div class="card bg-default shadow">
         <div class="card-header bg-transparent border-0">
-            <h3 class="mb-0 text-white">Lista de Estudiantes</h3>
+            <h3 class="mb-0 text-white">TOP 5</h3>
         </div>
 
         <el-table class="table-responsive table-dark"
                   header-row-class-name="thead-dark"
-                  :data="projects">
+                  :data="students">
             <el-table-column label="Nombre"
                              min-width="250px"
                              prop="name"
@@ -16,7 +16,7 @@
                             <div class="avatar rounded-circle mr-3">
                                 <img alt="Image placeholder" :src="row.img">
                             </div>
-                            <nuxt-link :to="{ name: 'examples-user-profile' }">
+                            <nuxt-link :to="`/estudiantes/${row.id}`">
                                 <div class="media-body text-white">
                                     <span class="font-weight-600 name mb-0 text-sm">{{row.title}}</span>
                                 </div>
@@ -64,8 +64,9 @@
       [DropdownMenu.name]: DropdownMenu,
     },
     data() {
+      const students = projects.slice(0, 5);
       return {
-        projects,
+        students,
         currentPage: 1
       };
     }

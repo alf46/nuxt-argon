@@ -10,47 +10,29 @@
           }">
         </sidebar-item>
 
-        <sidebar-item
-          :link="{
-            name: 'Control de usuario',
-            icon: 'ni ni-circle-08',
-          }"
-        >
-          <sidebar-item
-            :link="{ name: 'Perfil de Usuario', path: '/examples/user-profile' }" />
-          <sidebar-item
-            :link="{
-              name: 'Usuarios',
-              path: '/examples/user-management',
-            }"/>
-        </sidebar-item>
-
-        <sidebar-item :link="{ name: 'Icons', path: '/components/icons', icon: 'ni ni-planet' }"/>
-        <sidebar-item :link="{
-                        name: 'Tables',
-                        icon: 'ni ni-align-left-2 text-default',
-                        path: '/tables/regular'}">
-        </sidebar-item>
+        <sidebar-item :link="{ name: 'Estudiantes', path: '/estudiantes', icon: 'ni ni-hat-3' }"/>
+        <sidebar-item :link="{ name: 'Citas', path: '/citas', icon: 'ni ni-collection' }"/>
+        <sidebar-item :link="{ name: 'Alertas', path: '/components/icons', icon: 'ni ni-sound-wave' }"/>
+        <sidebar-item :link="{ name: 'Seguridad', path: '/components/icons', icon: 'ni ni-lock-circle-open' }"/>
 
       <div class="dropdown-divider"></div>
-      <a href="https://www.creative-tim.com/product/nuxt-argon-dashboard-pro-laravel"
+      <a href="https://www.intec.edu.do/estudiantes/calendarios"
         target="_blank"
         class="btn btn-sm btn-danger btn-icon mx-sm-5 mb-2 d-none d-md-block">
         <span class="btn-inner--icon"><i class="fas fa-download mr-2"></i></span>
-        <span class="nav-link-inner--text">Calendario Académico</span></a>
-
-      <a href="https://nuxt-argon-dashboard-laravel.creative-tim.com/documentation/"
-        target="_blank"
-        class="btn btn-sm btn-neutral btn-icon mx-sm-5 mb-2 d-none d-md-block"
-        ><span class="btn-inner--icon"><i class="fas fa-file-alt"></i></span>
-        <span class="nav-link-inner--text">Historial según pensum</span></a>
-
-      <a href="https://www.creative-tim.com/product/nuxt-argon-dashboard-laravel"
+        <span class="nav-link-inner--text">Calendarios</span></a>
+   
+      <a href="https://www.intec.edu.do/downloads/documents/institucionales/reglamentos/reglamento-academico-de-grado.pdf"
         target="_blank" class="btn btn-sm btn-info btn-icon mx-sm-5 mb-2 d-none d-md-block">
         <span class="btn-inner--icon"><i class="ni ni-hat-3"></i></span>
-        <span class="nav-link-inner--text">Reglamento Académico</span></a>
+        <span class="nav-link-inner--text">Reglamento</span></a>
 
-      <a href="https://github.com/creativetimofficial/nuxt-argon-dashboard-laravel"
+      <a href="https://www.intec.edu.do/"
+        target="_blank" class="btn btn-sm btn-warning btn-icon mx-sm-5 mb-2 d-none d-md-block">
+        <span class="btn-inner--icon"><i class="fas fa-download mr-2"></i></span>
+        <span class="nav-link-inner--text">Programación</span></a>
+
+      <a href="https://www.intec.edu.do/downloads/documents/institucionales/reglamentos/Reglamento_Sistema_de_Apoyo.pdf"
         target="_blank" class="btn btn-sm btn-dark btn-icon mx-sm-5 mb-2 d-none d-md-block">
         <span class="btn-inner--icon"><i class="ni ni-building"></i></span>
         <span class="nav-link-inner--text">Sistema de Apoyo a la Permanencia</span></a>

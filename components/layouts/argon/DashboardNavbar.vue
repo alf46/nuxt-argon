@@ -18,7 +18,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-search"></i></span>
           </div>
-          <input class="form-control" placeholder="Search" type="text" />
+          <input class="form-control" placeholder="Buscar" type="text" />
         </div>
       </div>
       <button
@@ -73,11 +73,38 @@
           <!-- Dropdown header -->
           <div class="px-3 py-3">
             <h6 class="text-sm text-muted m-0">
-              You have <strong class="text-primary">13</strong> notifications.
+              Usted tiene <strong class="text-primary">13</strong> Notificaciones.
             </h6>
           </div>
           <!-- List group -->
           <div class="list-group list-group-flush">
+            <a href="#!" class="list-group-item list-group-item-action">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <!-- Avatar -->
+                  <img
+                    alt="Image placeholder"
+                    src="/img/theme/ima03.jpg"
+                    class="avatar rounded-circle"
+                  />
+                </div>
+                <div class="col ml--2">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h4 class="mb-0 text-sm">Carmen Contreras</h4>
+                    </div>
+                    <div class="text-right text-muted">
+                      <small>2 hrs ago</small>
+                    </div>
+                  </div>
+                  <p class="text-sm mb-0">
+                   Una asignatura fue retira
+                  </p>
+                </div>
+              </div>
+            </a>
             <a href="#!" class="list-group-item list-group-item-action">
               <div class="row align-items-center">
                 <div class="col-auto">
@@ -93,41 +120,14 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
-                    </div>
-                    <div class="text-right text-muted">
-                      <small>2 hrs ago</small>
-                    </div>
-                  </div>
-                  <p class="text-sm mb-0">
-                    Let's meet at Starbucks at 11:30. Wdyt?
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#!" class="list-group-item list-group-item-action">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <img
-                    alt="Image placeholder"
-                    src="/img/theme/team-2.jpg"
-                    class="avatar rounded-circle"
-                  />
-                </div>
-                <div class="col ml--2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
+                      <h4 class="mb-0 text-sm">Pedro Vargas</h4>
                     </div>
                     <div class="text-right text-muted">
                       <small>3 hrs ago</small>
                     </div>
                   </div>
                   <p class="text-sm mb-0">
-                    A new issue has been reported for Argon.
+                   Se reportó una medida disciplinaria
                   </p>
                 </div>
               </div>
@@ -147,13 +147,13 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
+                      <h4 class="mb-0 text-sm">Erida Pacheco</h4>
                     </div>
                     <div class="text-right text-muted">
                       <small>5 hrs ago</small>
                     </div>
                   </div>
-                  <p class="text-sm mb-0">Your posts have been liked a lot.</p>
+                  <p class="text-sm mb-0">Asignatura reprobada.</p>
                 </div>
               </div>
             </a>
@@ -172,14 +172,14 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
+                      <h4 class="mb-0 text-sm">Adamilca Rodriguez</h4>
                     </div>
                     <div class="text-right text-muted">
                       <small>2 hrs ago</small>
                     </div>
                   </div>
                   <p class="text-sm mb-0">
-                    Let's meet at Starbucks at 11:30. Wdyt?
+                    Cambio de índice académico
                   </p>
                 </div>
               </div>
@@ -190,7 +190,7 @@
                   <!-- Avatar -->
                   <img
                     alt="Image placeholder"
-                    src="/img/theme/team-5.jpg"
+                    src="/img/theme/ima06.jpg"
                     class="avatar rounded-circle"
                   />
                 </div>
@@ -199,14 +199,14 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
+                      <h4 class="mb-0 text-sm">Maria Berroa</h4>
                     </div>
                     <div class="text-right text-muted">
                       <small>3 hrs ago</small>
                     </div>
                   </div>
                   <p class="text-sm mb-0">
-                    A new issue has been reported for Argon.
+                    Cambio de índice académico
                   </p>
                 </div>
               </div>

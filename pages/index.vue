@@ -7,11 +7,11 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="pr-5">
-                <h1 class="display-2 text-white font-weight-bold mb-0">Argon Dashboard PRO</h1>
-                <h2 class="display-4 text-white font-weight-light">A beautiful premium dashboard for Bootstrap 4.</h2>
-                <p class="text-white mt-4">Argon perfectly combines reusable HTML and modular CSS with a modern styling and beautiful markup throughout each HTML template in the pack.</p>
+                <h1 class="display-2 text-white font-weight-bold mb-0">INTEC - Sistema de Consejería Académica</h1>
+                <h2 class="display-4 text-white font-weight-light">Manejo de citas, seguimiento, visor de eventos, acceso rápido a recursos, reportes, seguridad, etc.</h2>
+                <p class="text-white mt-4">Sistema que se encargará de manejar y controlar todo el proceso de acompañamiento de los estudiantes hasta la finalización de sus estudios.</p>
                 <div class="mt-5">
-                  <nuxt-link to="/dashboard" class="btn btn-neutral my-2">Explore Dashboard</nuxt-link>
+                  <nuxt-link to="/dashboard" class="btn btn-neutral my-2">Explorar Dashboard</nuxt-link>
                   <a href="https://www.creative-tim.com/product/nuxt-argon-dashboard-pro" class="btn btn-default my-2">Purchase now</a>
                 </div>
               </div>
@@ -21,20 +21,32 @@
                 <div class="col-md-6">
                   <div class="card">
                     <div class="card-body">
-                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow mb-4">
-                        <i class="ni ni-active-40"></i>
+                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow mb-4">
+                        <i class="ni ni-align-left-2"></i>
                       </div>
-                      <h5 class="h3">Components</h5>
-                      <p>Argon comes with over 70 handcrafted components.</p>
+                      <h5 class="h3">Citas</h5>
+                      <p>Gestión de citas entre estudiantes y consejeros.</p>
+                        <badge class="badge-dot mr-4" type="">
+                          <i class="bg-info"></i>
+                          <small>comentario</small>
+                            <i class="bg-green2"></i>
+                          <small>seguimiento</small>
+                        </badge>
                     </div>
+                    
                   </div>
                   <div class="card">
                     <div class="card-body">
-                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow mb-4">
+                      <div class="icon icon-shape bg-gradient-success text-white rounded-circle mb-4">
                         <i class="ni ni-active-40"></i>
                       </div>
-                      <h5 class="h3">Plugins</h5>
-                      <p>Fully integrated and extendable third-party plugins that you will love.</p>
+                      <h5 class="h3">Eventos</h5>
+                      <p>Visor de los eventos más importantes de los estudiantes que pueden afectar el progreso del mismo.</p>
+                        <badge class="badge-dot mr-4" type="">
+                          <i class="bg-info"></i><small>Índice</small>
+                          <i class="bg-green2"></i><small>Permanencia</small>
+                          <i class="bg-warning"></i><small>Retiro</small>
+                        </badge>
                     </div>
                   </div>
                 </div>
@@ -42,10 +54,18 @@
                   <div class="card mb-4">
                     <div class="card-body">
                       <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow mb-4">
-                        <i class="ni ni-active-40"></i>
+                        <i class="ni ni-bell-55"></i>
                       </div>
-                      <h5 class="h3">Pages</h5>
-                      <p>From simple to complex, you get a beautiful set of 15+ page examples.</p>
+                      <h5 class="h3">Alertas</h5>
+                      <p>Sistema de alerta para estudiantes en Progreso Académico no Satisfactorio.</p>
+                      <badge class="badge-dot mr-4" type="">
+                          <i class="bg-green2"></i>
+                          <small>verde</small>
+                            <i class="bg-warning"></i>
+                          <small>amarilla</small>
+                           <i class="bg-success"></i>
+                          <small>roja</small>
+                        </badge>
                     </div>
                   </div>
                   <div class="card mb-4">
@@ -53,8 +73,13 @@
                       <div class="icon icon-shape bg-gradient-warning text-white rounded-circle shadow mb-4">
                         <i class="ni ni-active-40"></i>
                       </div>
-                      <h5 class="h3">Documentation</h5>
-                      <p>You will love how easy is to to work with Argon.</p>
+                      <h5 class="h3">Seguridad</h5>
+                      <p>Sistema de perfiles de usuarios, permisos y actores.</p>
+                       <badge class="badge-dot mr-4" type="">
+                          <i class="bg-info"></i><small>Consejero</small>
+                          <i class="bg-green2"></i><small>Staff</small>
+                          <i class="bg-warning"></i><small>Orientador</small>
+                        </badge>
                     </div>
                   </div>
                 </div>
@@ -73,11 +98,11 @@
     <section class="py-6 pb-9 bg-default">
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
-          <h2 class="display-3 text-white">A complete HTML solution</h2>
+          <h2 class="display-3 text-white">Consejería Académica</h2>
           <p class="lead text-white">
-            Argon is a completly new product built on our newest re-built from scratch framework structure that is meant to make our products more intuitive,
-            more adaptive and, needless to say, so much easier to customize. Let Argon amaze you with its cool features and build tools and get your project to a whole new level.
-          </p>
+            Cada profesor consejero tendrá una serie de estudiantes a los cuales debe darle seguimiento.
+            El sistema debe listar los estudiantes asignados a cada consejero, mostrando las alertas, y toda la información relacionada al progreso académico del estudiante.
+           </p>
         </div>
       </div>
     </section>
@@ -339,7 +364,7 @@
   export default {
     layout: 'DashboardLayout',
     name: 'home-page',
-    middleware: 'redirect',
+    // middleware: 'redirect',
     components: {
       [Tooltip.name]: Tooltip
     }
